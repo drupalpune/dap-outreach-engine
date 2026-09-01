@@ -4,8 +4,9 @@ A repeatable monthly motion for running a community meetup: find a venue, find
 speakers, tell people. Packaged as Claude Skills, a couple of Python scripts and
 a CSV pipeline, so it works the same in month twelve as in month one.
 
-Built for [Drupalers Association Pune](https://drupalpune.in). Any chapter can
-fork it — see [chapter-config.md](skills/meetup-cycle/references/chapter-config.md).
+Built for [Drupalers Association Pune](https://drupalpune.in) - 859 members, on
+[meetup.com](https://www.meetup.com/pune-drupal-group/) and
+[LinkedIn](https://www.linkedin.com/company/102374470/). Any chapter can fork it — see [chapter-config.md](skills/meetup-cycle/references/chapter-config.md).
 
 **The system drafts. You send.** Every mail lands in Gmail drafts for review.
 Nothing goes out automatically, ever. Community outreach dies the moment it

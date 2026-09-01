@@ -60,7 +60,17 @@ Symlinks mean edits to the repo take effect immediately. Restart your session
 afterwards so the skills are picked up.
 
 To use them project-locally instead, run from inside this repo with the skills
-in `.claude/skills/`.
+in `.claude/skills/` - the repo already carries those as relative symlinks into
+`skills/`.
+
+**On Windows**, git checks those symlinks out as plain text files containing a
+path unless Developer Mode is on and `git config core.symlinks true` is set.
+If `.claude/skills/venue-outreach` looks like a one-line text file, that is what
+happened. Either turn both on and re-clone, or copy the directories instead:
+
+```
+xcopy /E /I skills\venue-outreach .claude\skills\venue-outreach
+```
 
 ## 6. Connect Gmail
 

@@ -7,8 +7,12 @@ chapter:
   short_name: DAP
   city: Pune
   website: https://drupalpune.in
-  meetup_com: ""          # fill in
-  linkedin: ""            # fill in
+  meetup_com: https://www.meetup.com/pune-drupal-group/
+  linkedin: https://www.linkedin.com/company/102374470/
+  instagram: https://www.instagram.com/drupalersassociationpune/
+  x: https://x.com/drupalcamppune
+  drupal_org: https://www.drupal.org/project/punedrug
+  slack: "#pune on Drupal Slack"      # where hosting enquiries are pointed
 
 meetup:
   weekday: saturday       # see scripts/meetup_date.py

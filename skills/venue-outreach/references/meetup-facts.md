@@ -69,5 +69,11 @@ the single most persuasive line in a first-touch mail, and it has to be current.
 ## Links
 
 - Website: https://drupalpune.in
-- meetup.com: (fill in)
-- LinkedIn: (fill in)
+- meetup.com: https://www.meetup.com/pune-drupal-group/
+- LinkedIn: https://www.linkedin.com/company/102374470/
+- Instagram: https://www.instagram.com/drupalersassociationpune/
+- X: https://x.com/drupalcamppune
+- Drupal.org group: https://www.drupal.org/project/punedrug
+- Hosting enquiries are pointed at `#pune` on Drupal Slack
+
+Canonical copies live in `chapter.yml`. If a link changes, change it there.
