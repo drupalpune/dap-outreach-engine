@@ -1,0 +1,26 @@
+# Live contact data - never commit. Only *.sample.csv ships publicly.
+data/venues.csv
+data/speakers.csv
+data/*.local.csv
+data/private/
+
+# Local chapter config with real addresses
+chapter.local.yml
+
+# Drafts and scratch output
+out/
+drafts/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+.env
+
+# Vendored third-party skill - fetch locally, do not commit (see skills/unslop/ATTRIBUTION.md)
+skills/unslop/SKILL.md
+
+# Internal analysis - names orgs and ranks them; keep out of the public repo
+docs/history.md

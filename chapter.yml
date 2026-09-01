@@ -1,0 +1,45 @@
+# Chapter configuration. Fork this repo, change this file.
+# Real addresses and phone numbers can go in chapter.local.yml, which is
+# gitignored and overrides this file.
+
+chapter:
+  name: Drupalers Association Pune
+  short_name: DAP
+  city: Pune
+  website: https://drupalpune.in
+  meetup_com: ""          # fill in
+  linkedin: ""            # fill in
+
+meetup:
+  weekday: saturday       # see scripts/meetup_date.py
+  nth: 3                  # third Saturday
+  start_time: "09:30"
+  end_time: "13:30"
+  typical_attendance: "25-40"
+  room_capacity_ask: "20-30"
+
+sender:
+  name: Abhisek
+  full_name: Abhisek Mazumdar
+  title: Organiser, Drupalers Association Pune
+  email: ""               # the address drafts are created under
+  phone: ""               # appears in confirmation and brief mails
+
+slots:
+  - id: session
+    label: Main session
+    duration: 45 min + 15 min Q&A
+    time: "10:15"
+  - id: lightning
+    label: Lightning talk
+    duration: 25 min + 5 min Q&A
+    time: "11:30"
+  - id: bof
+    label: BoF
+    duration: 45 min open discussion
+    time: "12:00"
+
+pipeline:
+  data_dir: data
+  organisers:
+    - abhisek           # values allowed in the claimed_by column

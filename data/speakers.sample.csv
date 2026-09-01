@@ -1,0 +1,4 @@
+name,email,linkedin,expertise_tags,preferred_format,city,last_talk_title,last_talk_date,stage,last_contacted,next_action,next_action_date,claimed_by,notes
+Sample Speaker One,one@example.invalid,https://linkedin.com/in/example-one,"drupal,migrations",session,Pune,Migrating a 10-year-old Drupal 7 site,2026-03-21,not_contacted,,Send touch 1 invite,2026-09-19,abhisek,Reliable; prefers a main session over lightning.
+Sample Speaker Two,two@example.invalid,,"devops,ci-cd",lightning,Pune,,,invited,2026-08-25,Nudge if no reply,2026-09-01,abhisek,First-timer. Nervous about slides - pitch the BoF format as a fallback.
+Sample Speaker Three,three@example.invalid,https://linkedin.com/in/example-three,"ai-tooling,php",any,Mumbai,Using LLMs in a Drupal editorial workflow,2025-11-15,interested,2026-08-28,Ask for a topic title,2026-09-03,abhisek,Travels from Mumbai - needs 3 weeks notice.
