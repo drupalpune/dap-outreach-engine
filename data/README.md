@@ -51,7 +51,10 @@ shows the rule against the history.
 - `preferred_format` - `session | lightning | bof | any`.
 - `last_talk_title` / `last_talk_date` - drives the "you spoke with us before" line.
 
-**meetups.csv** is append-only. One row per meetup, added at T+2. Columns:
+**meetups.csv** is append-only. One row per meetup, added at T+2 by running
+`python3 scripts/sync_meetups.py --write` once the meetup is marked *Held* on
+drupalpune.in (the website is now the source of truth for everything except
+`notes`). Columns:
 
 ```
 date, host_org, venue_area, attendee_count, main_session, lightning_talk,

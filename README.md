@@ -94,6 +94,20 @@ a cold sequence and it's the one that always gets lost.
 
 Full detail: [docs/playbook.md](docs/playbook.md).
 
+## Meetup history lives on the website
+
+Since [campsite#234](https://github.com/drupalpune/campsite/pull/234), meetups
+are recorded on drupalpune.in: after each one, set it to *Held* and fill in
+talks, speakers and attendance. Then pull it here:
+
+```bash
+python3 scripts/sync_meetups.py          # dry run: shows what would change
+python3 scripts/sync_meetups.py --write  # saves data/meetups.csv
+```
+
+The site exports every column except `notes`, which stays here. Blank site
+values never overwrite local ones, and nothing is deleted.
+
 ## Privacy
 
 Real names, emails and numbers **never enter this repo.** Only `*.sample.csv`
@@ -104,10 +118,11 @@ with fake rows is public; `venues.csv` and `speakers.csv` are gitignored.
 
 ```
 skills/          four Claude Skills, plus a pointer to a fifth: SKILL.md + assets (templates) + references (facts)
-scripts/         meetup_date.py (the date + timeline), pipeline_report.py (what's due)
+scripts/         meetup_date.py (the date + timeline), pipeline_report.py (what's due),
+                 sync_meetups.py (pull meetup history from drupalpune.in/meetups.csv)
 data/            sample CSVs, schema notes, public meetup history, confirmed cycle dates
 docs/            playbook.md (runbook), setup.md (install), voice.md (how drafts should read)
-tests/           pytest, 37 tests over the date, pipeline and CSV integrity
+tests/           pytest over the date, pipeline, history sync and CSV integrity
 chapter.yml      chapter name, sender identity, slot definitions
 ```
 
